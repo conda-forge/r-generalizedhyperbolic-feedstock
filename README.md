@@ -1,11 +1,11 @@
-About r-generalizedhyperbolic
-=============================
+About r-generalizedhyperbolic-feedstock
+=======================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-generalizedhyperbolic-feedstock/blob/main/LICENSE.txt)
 
 Home: https://r-forge.r-project.org/projects/rmetrics/
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-generalizedhyperbolic-feedstock/blob/main/LICENSE.txt)
 
 Summary: Functions for the hyperbolic and related distributions. Density, distribution and quantile functions and random number generation are provided for the hyperbolic distribution, the generalized hyperbolic distribution, the generalized inverse Gaussian distribution and the skew-Laplace distribution. Additional functionality is provided for the hyperbolic distribution, normal inverse Gaussian distribution and generalized inverse Gaussian distribution, including fitting of these distributions to data. Linear models with hyperbolic errors may be fitted using hyperblmFit.
 
