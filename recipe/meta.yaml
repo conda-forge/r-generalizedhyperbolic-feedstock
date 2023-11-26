@@ -1,4 +1,4 @@
-{% set version = '0.8-4' %}
+{% set version = "0.8-6" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/GeneralizedHyperbolic_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/GeneralizedHyperbolic/GeneralizedHyperbolic_{{ version }}.tar.gz
-  sha256: 95967156dd694d40654fd5a1f626c866c2525a1e74fd176deb906af7eb76f805
+  sha256: 994454f356ec598b887cb6112f4efd2adc438fb970eacb68d4e97666164c36a9
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -41,13 +41,8 @@ test:
 about:
   home: https://r-forge.r-project.org/projects/rmetrics/
   license: GPL-2.0-or-later
-  summary: Functions for the hyperbolic and related distributions. Density, distribution and
-    quantile functions and random number generation are provided for the hyperbolic
-    distribution, the generalized hyperbolic distribution, the generalized inverse Gaussian
-    distribution and the skew-Laplace distribution. Additional functionality is provided
-    for the hyperbolic distribution, normal inverse Gaussian distribution and generalized
-    inverse Gaussian distribution, including fitting of these distributions to data.
-    Linear models with hyperbolic errors may be fitted using hyperblmFit.
+  summary: Functions for the hyperbolic and related distributions. Density, distribution and quantile functions and random number generation are provided for the hyperbolic distribution, the generalized hyperbolic distribution, the generalized inverse Gaussian distribution and the skew-Laplace distribution. Additional functionality
+    is provided for the hyperbolic distribution, normal inverse Gaussian distribution and generalized inverse Gaussian distribution, including fitting of these distributions to data. Linear models with hyperbolic errors may be fitted using hyperblmFit.
   license_family: GPL2
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
